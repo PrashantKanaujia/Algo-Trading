@@ -1,0 +1,58 @@
+.db-stats-panel {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #1e1e2f;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+.db-stat-card {
+  background-color: #2b2b3d;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 150px;
+  min-width: 120px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.db-stat-card h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #a0a0a0;
+  text-transform: uppercase;
+}
+
+.db-stat-card p {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.db-stat-positive p {
+  color: #4CAF50 !important;
+}
+
+.db-stat-negative p {
+  color: #F44336 !important;
+}
+
+.db-stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  background-color: #34344a;
+}

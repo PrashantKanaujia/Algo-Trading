@@ -1,0 +1,51 @@
+Problem:
+
+You assume:
+
+order placed = full execution
+
+Reality:
+
+order may be partially filled
+
+
+
+
+
+
+
+1. API Retry Logic (MANDATORY)
+Problem:
+
+Binance fails randomly
+
+Your code just crashes or skips
+
+
+
+
+4. Order Confirmation
+
+
+
+
+Problem:
+
+If crash happens:
+
+bot dies → position still open → no control
+Minimum protection:
+A. Always check position at start of loop
+
+You already do:
+
+get_current_position(symbol)
+
+Good — keep it.
+
+
+
+
+
+
+race conditions btw sl,tp and live orders

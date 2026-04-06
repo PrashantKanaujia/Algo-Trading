@@ -1,0 +1,80 @@
+.bot-ctrl-panel {
+  background: linear-gradient(145deg, #14141f, #1e1e2c); 
+  color: #eceff1; 
+  padding: 20px 24px; 
+  border-radius: 12px; 
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4); 
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Inter', sans-serif; 
+}
+
+.bot-ctrl-panel h2 {
+  font-size: 20px;
+  margin-bottom: 14px;
+  color: #90a4ae; 
+  font-weight: 600;
+}
+
+.bot-ctrl-status {
+  font-size: 16px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #b0bec5; 
+}
+
+/* Buttons */
+.bot-ctrl-btn {
+  padding: 12px 18px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 8px; 
+  background: #2c2c3e; 
+  color: #eceff1;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.bot-ctrl-btn:hover {
+  background: #3b3b5c; 
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+.bot-ctrl-btn-start {
+  background: #4caf50; 
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.4);
+}
+
+.bot-ctrl-btn-start:hover {
+  background: #66bb6a;
+}
+
+
+.bot-ctrl-btn-stop {
+  background: #f44336; 
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(244, 67, 54, 0.4);
+}
+
+.bot-ctrl-btn-stop:hover {
+  background: #ef5350;
+}
+
+.bot-ctrl-btn-close {
+  background: #ff9800; 
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(255, 152, 0, 0.4);
+}
+
+.bot-ctrl-btn-close:hover {
+  background: #ffb74d;
+}

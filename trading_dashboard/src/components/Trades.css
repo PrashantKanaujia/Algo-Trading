@@ -1,0 +1,61 @@
+.trades-v2-container {
+  background: linear-gradient(145deg, #14141f, #1e1e2c); 
+  
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.trades-v2-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.trades-v2-table th,
+.trades-v2-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  font-size: 14px;
+}
+
+.trades-v2-table th {
+  background: #1e1e1e;
+  color: #e7fa92;
+  font-weight: 700;
+}
+
+.trades-v2-table tr:hover {
+  background: #2a2a2a;
+}
+
+.trades-v2-side-buy {
+  color: #00ff88;
+  font-weight: bold;
+}
+
+.trades-v2-side-sell {
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+.trades-v2-footer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.trades-v2-more-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.trades-v2-more-btn:hover {
+  background-color: #1e5121;
+}

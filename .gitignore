@@ -1,0 +1,30 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+
+# Environment files
+.env
+
+
+variables.css
+api
+botApi.js
+
+# IDE files
+.vscode/
+.DS_Store
+
+
+checkmode.py
+test_client.py
+test_limit.py
+test_log.py
+test_market.py
+
+main.py
