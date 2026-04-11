@@ -1,11 +1,9 @@
 from bot.client import client
-import os
 from utils.logger import logger
 
 
 def place_order(symbol, side, order_type, quantity, price=None):
 
-    # logger=setup_logger()
 
     logger.info(
         f"Request -> Symbol: {symbol}, Side: {side}, "

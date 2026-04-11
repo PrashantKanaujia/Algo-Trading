@@ -21,10 +21,7 @@ botApi.js
 .DS_Store
 
 
+State
+logs
 checkmode.py
-test_client.py
-test_limit.py
-test_log.py
-test_market.py
-
-main.py
+trades.csv
