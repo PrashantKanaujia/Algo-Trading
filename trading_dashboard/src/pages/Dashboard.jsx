@@ -5,7 +5,7 @@ import Trades from "../components/Trades1"
 import StatsPanel from "../components/StatsPanel"
 import BotControls from "../components/BotControls";
 import "./Dashboard.css"
-import "../variables.css"
+// import "../variables.css"
 
 function Dashboard() {
   return (
