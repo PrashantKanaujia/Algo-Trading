@@ -25,3 +25,5 @@ State
 logs
 checkmode.py
 trades.csv
+
+node_modules
