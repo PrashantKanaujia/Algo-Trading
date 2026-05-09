@@ -10,10 +10,15 @@ api_secret = os.getenv("BINANCE_API_SECRET")
 if not api_key or not api_secret:
     raise ValueError("API credentials not found in .env")
 
-client = Client(api_key, api_secret)
+try:
+    client = Client(api_key, api_secret)
+    client.FUTURES_URL = "https://testnet.binancefuture.com/fapi"
+except Exception as e:
+    print("Binance client init failed:", e)
+    client = None
 
-
-client.FUTURES_URL = "https://testnet.binancefuture.com/fapi"
+# client = Client(api_key, api_secret)
+# client.FUTURES_URL = "https://testnet.binancefuture.com/fapi"
 
 
 def get_current_position(symbol):
