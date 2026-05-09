@@ -12,7 +12,11 @@ function StatsPanel() {
   const fetchStats = async () => {
     try {
       const res = await getStats();
-      setStats(res.data);
+      setStats(res.data || {
+        total_trades: 0,
+        win_rate: 0,
+        total_pnl: 0
+      });
     } catch {
       console.error("Stats fetch error");
     }
