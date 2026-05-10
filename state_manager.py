@@ -15,17 +15,22 @@ def write_json(filename, data):
 
 def read_json(filename, default=None):
 
+    path = STATE_DIR / filename
+
     print("Trying to open:", filename)
     print("Absolute path:", path.resolve())
     print("Exists:", path.exists())
 
-    path = STATE_DIR / filename
-
     if not path.exists():
-        return default
+        return {} if default is None else default
 
-    with open(path) as f:
-        return json.load(f)
+    try:
+        with open(path) as f:
+            return json.load(f)
+
+    except Exception as e:
+        print("JSON ERROR:", e)
+        return {} if default is None else default
     
 
 
