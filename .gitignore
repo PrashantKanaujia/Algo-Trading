@@ -21,7 +21,7 @@ botApi.js
 .DS_Store
 
 
-State
+# State
 logs
 checkmode.py
 trades.csv
