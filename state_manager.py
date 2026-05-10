@@ -1,9 +1,12 @@
 import json
 import time
+import os
 from pathlib import Path
 
 STATE_DIR = Path("state")
 STATE_DIR.mkdir(exist_ok=True)
+print("CURRENT DIR:", os.getcwd())
+print("FILES:", os.listdir())
 
 def write_json(filename, data):
     path = STATE_DIR / filename
@@ -11,6 +14,10 @@ def write_json(filename, data):
         json.dump(data, f, indent=2)
 
 def read_json(filename, default=None):
+
+    print("Trying to open:", filename)
+    print("Absolute path:", os.path.abspath(filename))
+
     path = STATE_DIR / filename
 
     if not path.exists():
