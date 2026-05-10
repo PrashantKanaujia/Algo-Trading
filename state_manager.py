@@ -3,7 +3,7 @@ import time
 import os
 from pathlib import Path
 
-STATE_DIR = Path("state")
+STATE_DIR = Path("State")
 STATE_DIR.mkdir(exist_ok=True)
 print("CURRENT DIR:", os.getcwd())
 print("FILES:", os.listdir())
