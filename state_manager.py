@@ -16,7 +16,8 @@ def write_json(filename, data):
 def read_json(filename, default=None):
 
     print("Trying to open:", filename)
-    print("Absolute path:", os.path.abspath(filename))
+    print("Absolute path:", path.resolve())
+    print("Exists:", path.exists())
 
     path = STATE_DIR / filename
 
